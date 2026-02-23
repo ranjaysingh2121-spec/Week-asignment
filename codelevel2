@@ -1,0 +1,69 @@
+//Que 1. Write a Java program to perform addition, subtraction, multiplication and division of two numbers.
+import java.util.Scanner;
+public class Codes_Level_2 {
+    public static void main(String[] args) {
+        float num_1,num_2;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first number: ");
+        num_1 = sc.nextFloat();
+        System.out.println("Enter the second number: ");
+        num_2 = sc.nextFloat();
+        float sum = num_1 + num_2;
+        float difference = num_1 - num_2;
+        float product = num_1 * num_2;
+        float quotient = num_1 / num_2;
+        System.out.println("The addition,subtraction,multiplication,division of the two numbers is: " + sum + ", " + difference + ", " + product + ", " + quotient);
+
+    }
+}
+
+//Que 2. Write a Java program to calculate the area of a triangle and convert it into square inches.
+import java.util.Scanner;
+public class Codes_Level_2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        float base, height;
+        System.out.println("Enter the base of the triangle(in cm): ");
+        base = sc.nextFloat();
+        System.out.println("Enter the height of the triangle(in cm): ");
+        height = sc.nextFloat();
+        float area = (base * height) / 2;
+        float cm=1/2.54;
+        float area_inch = area * cm * cm;
+        System.out.println("The area of the triangle in sq inch: " + area_inch + " and sq cm: " + area);
+
+
+    }
+}
+
+//Que 3. Write a Java program to calculate the side of a square when the perimeter is given.
+import java.util.Scanner;
+public class Codes_Level_2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int per;
+        System.out.println("Enter the perimeter of squaare: ");
+        per = sc.nextInt();
+        float side = per / 4;
+        System.out.println("The side of the square is: " + side+" whose perimeter is: " + per);
+
+
+    }
+}
+
+//Que 6. Write a Java program to calculate the quotient and remainder of two numbers.
+import java.util.Scanner;
+public class Codes_Level_2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num_1,num_2;
+        System.out.println("Enter the first number: ");
+        num_1 = sc.nextInt();   
+        System.out.println("Enter the second number: ");
+        num_2 = sc.nextInt();
+        float quotient = num_1 / num_2;
+        float remainder = num_1 % num_2;
+        System.out.println("The quotient and remainder of the two numbers is: " + quotient + " and " + remainder);
+
+    }
+}
